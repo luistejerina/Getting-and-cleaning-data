@@ -21,7 +21,7 @@ subject| id for one of 30 subjects that participated in the study
 15.50000 74.91667  0.00000 -1.20267  1.00000 30.00000 
 
 
-variable|contains the names of the various measurements taken with the accelerometers and gyroscopes. The meaning of each specific variable is listed below
+measurement variables| these variables contain the mean and standard deviations of the various measurements taken with the accelerometers and gyroscopes for each person and activity. The meaning of each specific variable is listed below
 -----------------------------------------------------------------------------
 
 1            tBodyAcc-mean()-X	mean of body accelerometer signal over x axis
@@ -91,9 +91,3 @@ variable|contains the names of the various measurements taken with the accelerom
 65      fBodyBodyGyroMag-std()	standard deviation of body gyroscope magnitude of three dimensional signal (frequency domain signal)
 66  fBodyBodyGyroJerkMag-std()	standard deviation of body gyroscope jerk signal magnitude of three dimensional signal (frequency domain signal)
 
-mean| contains the mean values of each measurement for each activity and for each individual
-------------------------------------------------------------------------------------------
-sumary statistics for mean
-
-    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
--0.99770 -0.96210 -0.46990 -0.48440 -0.07836  0.97450

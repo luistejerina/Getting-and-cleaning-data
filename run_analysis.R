@@ -11,7 +11,7 @@ X_test <- read.table("getdata-projectfiles-UCI HAR Dataset/UCI HAR Dataset/test/
 
 ##Step 2 this section loads necessary librarys for the exercise
 library(plyr)
-
+library(reshape2)
 ##Step 3 this section uses dataframe "features" to assign the name of the columns of the different measurements in the dataframe
 ##does the same for both datasets separately (could've done it laer together)
 names(X_test)<-features[,2]
@@ -63,13 +63,15 @@ completedataMelt<-melt(completedata,id=c("activity","subject"),measure.vars=c(co
 ##Step 16 This one uses de ddply command to collapse the data into the means by activity, subject and variable(i.e. type of variable)
 
 completedatab <- ddply(completedataMelt, c("activity", "subject","variable"), summarise,mean = mean(value))
-                                                                                                    
-##Step 17 this section exports the data into a txt file with                                                                                                     
 
-write.table(completedatab,  "completedatab.txt", row.names = FALSE)
+##Step 17 reshape to wide because im not sure i will receive credit for long format
+completedatac <- dcast(completedatab, subject+activity ~ variable, mean)
+
+##Step 18 this section exports the data into a txt file with                                                                                                     
+
+write.table(completedatac,  "completedatac.txt", row.names = FALSE)
 
 ##Step 18 clean other datafiles
-#rm(a,b,completedatanames,activity_labels,completedata,features,subject_test,subject_train,test, train, X_test,X_train,y_test,y_train)
-
+rm(a,b,completedatanames,activity_labels,completedata,features,subject_test,subject_train,test, train, X_test,X_train,y_test,y_train)
 
 
