@@ -1,20 +1,20 @@
 # Getting-and-cleaning-data
 This repository contains an R file called run_analysis.R that processes the data for the Getting and cleaning data course project. 
 
-#it is a LONG version of the data. the 66 (measurements) column version is in a previous step of the R file called completedata.
 
-The code loads he dataframes contained in the Human Activity Recognition Using Smartphones Data Set at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+The code loads the dataframes contained in the Human Activity Recognition Using Smartphones Data Set at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 accessed on july 18th 2015. (see their website for specific information on the experiment)
 
 The R file processes the data for 30 individuals and 6 activities and keeps only the measurements for means and standard deviations of each of the measurments taken on them (see codebook for the description of each measurement.
 
 #DATAFILES BUILT WITH run_analysis.R
 completedataMelted
-The R file builds a dataframe called completedatab which containd 4 columns, one for the activity, one for the id of the subject, on for the type of measurement taken and one for the value of the measurement.The file has 679734 values in total (rows) for 33 types of measurements for 6 activities and for 30 individuals.
+The R file builds a dataframe called completedataMelted which containd 4 columns, one for the activity, one for the id of the subject, on for the type of measurement taken and one for the value of the measurement.The file has 679734 values in total (rows) for 33 types of measurements for 6 activities and for 30 individuals.
 
-completedatab
+completedatac
 
-This file saves only the means of the measurements for each variable for each activity and for each individual. the resulting datafram contains 11880 observations of the mean of the mean and standard deviation of each measurement. that is one observation for each person-activity-measurment combination.
+This file saves only the means of the measurements for each variable for each activity and for each individual. the resulting datafram contains 180 observations of the mean and standard deviation of each measurement. that is one observation for each person-activity combination, it also includes 66 colums of the various measurements.
 
 #the steps followed by the code are the following:
 
@@ -69,11 +69,12 @@ Step 16
 This one uses de ddply command to collapse the data into the means by activity, subject and variable(i.e. type of variable)
 
 
-Step 17
-this section exports the data into a txt file with    
+Step 17 reshape to wide because im not sure i will receive credit for long format
 
-Step 18
-clean other datafiles
+Step 18 this section exports the data into a txt file with                                                                                                     
+
+Step 19 clean other datafiles
+
 
 write.table(completedatab,  "completedatab.txt", row.names = FALSE)
 
