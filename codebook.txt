@@ -1,0 +1,99 @@
+The file completedatab contains the following variables:
+
+
+
+activity | labels and values for activities of subject
+--------
+$levels
+[1] "LAYING"            
+[2] "SITTING"           
+[3] "STANDING"          
+[4] "WALKING"           
+[5] "WALKING_DOWNSTAIRS"
+[6] "WALKING_UPSTAIRS"  
+
+$class
+[1] "factor"
+
+subject| id for one of 30 subjects that participated in the study
+--------
+    Mean Variance Skewness Kurtosis      Min      Max 
+15.50000 74.91667  0.00000 -1.20267  1.00000 30.00000 
+
+
+variable|contains the names of the various measurements taken with the accelerometers and gyroscopes. The meaning of each specific variable is listed below
+-----------------------------------------------------------------------------
+
+1            tBodyAcc-mean()-X	mean of body accelerometer signal over x axis
+2            tBodyAcc-mean()-Y	mean of body accelerometer signal over y axis
+3            tBodyAcc-mean()-Z	mean of body accelerometer signal over z axis
+4         tGravityAcc-mean()-X	mean of gravity accelerometer signal over x axis
+5         tGravityAcc-mean()-Y	mean of gravity accelerometer signal over y axis
+6         tGravityAcc-mean()-Z	mean of gravity accelerometer signal over z axis
+7        tBodyAccJerk-mean()-X	mean of body accelerometer jerk signal over x axis
+8        tBodyAccJerk-mean()-Y	mean of body accelerometer jerk signal over y axis
+9        tBodyAccJerk-mean()-Z	mean of body accelerometer jerk signal over z axis
+10          tBodyGyro-mean()-X	mean of gravity accelerometer signal over x axis
+11          tBodyGyro-mean()-Y	mean of gravity accelerometer signal over y axis
+12          tBodyGyro-mean()-Z	mean of gravity accelerometer signal over z axis
+13      tBodyGyroJerk-mean()-X	mean of gravity gyroscope signal over x axis
+14      tBodyGyroJerk-mean()-Y	mean of gravity gyroscope signal over y axis
+15      tBodyGyroJerk-mean()-Z	mean of gravity gyroscope signal over z axis
+16          tBodyAccMag-mean()	mean of body accelerometer magnitude of three dimensional signal
+17       tGravityAccMag-mean()	mean of gravity accelerometer magnitude of three dimensional signal
+18      tBodyAccJerkMag-mean()	mean of body accelerometer jerk signal magnitude of three dimensional signal
+19         tBodyGyroMag-mean()	mean of body gyroscope magnitude of three dimensional signal
+20     tBodyGyroJerkMag-mean()	mean of body gyroscope jerk signal magnitude of three dimensional signal
+21           fBodyAcc-mean()-X	mean of body accelerometer signal over x axis (frequency domain signal)
+22           fBodyAcc-mean()-Y	mean of body accelerometer signal over y axis (frequency domain signal)
+23           fBodyAcc-mean()-Z	mean of body accelerometer signal over z axis (frequency domain signal)
+24       fBodyAccJerk-mean()-X	mean of body accelerometer jerk signal over x axis (frequency domain signal)
+25       fBodyAccJerk-mean()-Y	mean of body accelerometer jerk signal over y axis (frequency domain signal)
+26       fBodyAccJerk-mean()-Z	mean of body accelerometer jerk signal over z axis (frequency domain signal)
+27          fBodyGyro-mean()-X	mean of gravity accelerometer signal over x axis (frequency domain signal)
+28          fBodyGyro-mean()-Y	mean of gravity accelerometer signal over y axis (frequency domain signal)
+29          fBodyGyro-mean()-Z	mean of gravity accelerometer signal over z axis (frequency domain signal)
+30          fBodyAccMag-mean()	mean of body gyroscope jerk signal magnitude of three dimensional signal  (frequency domain signal)
+31  fBodyBodyAccJerkMag-mean()	mean of body accelerometer jerk signal magnitude of three dimensional signal (frequency domain signal)
+32     fBodyBodyGyroMag-mean()	mean of body gyroscope magnitude of three dimensional signal (frequency domain signal)
+33 fBodyBodyGyroJerkMag-mean()	mean of body gyroscope jerk signal magnitude of three dimensional signal (frequency domain signal)
+34            tBodyAcc-std()-X	standard deviation of body accelerometer signal over x axis
+35            tBodyAcc-std()-Y	standard deviation of body accelerometer signal over y axis
+36            tBodyAcc-std()-Z	standard deviation of body accelerometer signal over z axis
+37         tGravityAcc-std()-X	standard deviation of gravity accelerometer signal over x axis
+38         tGravityAcc-std()-Y	standard deviation of gravity accelerometer signal over y axis
+39         tGravityAcc-std()-Z	standard deviation of gravity accelerometer signal over z axis
+40        tBodyAccJerk-std()-X	standard deviation of body accelerometer jerk signal over x axis
+41        tBodyAccJerk-std()-Y	standard deviation of body accelerometer jerk signal over y axis
+42        tBodyAccJerk-std()-Z	standard deviation of body accelerometer jerk signal over z axis
+43           tBodyGyro-std()-X	standard deviation of gravity accelerometer signal over x axis
+44           tBodyGyro-std()-Y	standard deviation of gravity accelerometer signal over y axis
+45           tBodyGyro-std()-Z	standard deviation of gravity accelerometer signal over z axis
+46       tBodyGyroJerk-std()-X	standard deviation of gravity gyroscope signal over x axis
+47       tBodyGyroJerk-std()-Y	standard deviation of gravity gyroscope signal over y axis
+48       tBodyGyroJerk-std()-Z	standard deviation of gravity gyroscope signal over z axis
+49           tBodyAccMag-std()	standard deviation of body accelerometer magnitude of three dimensional signal
+50        tGravityAccMag-std()	standard deviation of gravity accelerometer magnitude of three dimensional signal
+51       tBodyAccJerkMag-std()	standard deviation of body accelerometer jerk signal magnitude of three dimensional signal
+52          tBodyGyroMag-std()	standard deviation of body gyroscope magnitude of three dimensional signal
+53      tBodyGyroJerkMag-std()	standard deviation of body gyroscope jerk signal magnitude of three dimensional signal
+54            fBodyAcc-std()-X	standard deviation of body accelerometer signal over x axis (frequency domain signal)
+55            fBodyAcc-std()-Y	standard deviation of body accelerometer signal over y axis (frequency domain signal)
+56            fBodyAcc-std()-Z	standard deviation of body accelerometer signal over z axis (frequency domain signal)
+57        fBodyAccJerk-std()-X	standard deviation of body accelerometer jerk signal over x axis (frequency domain signal)
+58        fBodyAccJerk-std()-Y	standard deviation of body accelerometer jerk signal over y axis (frequency domain signal)
+59        fBodyAccJerk-std()-Z	standard deviation of body accelerometer jerk signal over z axis (frequency domain signal)
+60           fBodyGyro-std()-X	standard deviation of gravity accelerometer signal over x axis (frequency domain signal)
+61           fBodyGyro-std()-Y	standard deviation of gravity accelerometer signal over y axis (frequency domain signal)
+62           fBodyGyro-std()-Z	standard deviation of gravity accelerometer signal over z axis (frequency domain signal)
+63           fBodyAccMag-std()	standard deviation of body gyroscope jerk signal magnitude of three dimensional signal  (frequency domain signal)
+64   fBodyBodyAccJerkMag-std()	standard deviation of body accelerometer jerk signal magnitude of three dimensional signal (frequency domain signal)
+65      fBodyBodyGyroMag-std()	standard deviation of body gyroscope magnitude of three dimensional signal (frequency domain signal)
+66  fBodyBodyGyroJerkMag-std()	standard deviation of body gyroscope jerk signal magnitude of three dimensional signal (frequency domain signal)
+
+mean| contains the mean values of each measurement for each activity and for each individual
+------------------------------------------------------------------------------------------
+sumary statistics for mean
+
+    Min.  1st Qu.   Median     Mean  3rd Qu.     Max. 
+-0.99770 -0.96210 -0.46990 -0.48440 -0.07836  0.97450
