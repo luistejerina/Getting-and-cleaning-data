@@ -1,5 +1,8 @@
 # Getting-and-cleaning-data
 This repository contains an R file called run_analysis.R that processes the data for the Getting and cleaning data course project. 
+
+#it is a LONG version of the data. the 66 (measurements) column version is in a previous step of the R file called completedata.
+
 The code loads he dataframes contained in the Human Activity Recognition Using Smartphones Data Set at http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 accessed on july 18th 2015. (see their website for specific information on the experiment)
 
