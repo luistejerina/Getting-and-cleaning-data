@@ -67,7 +67,10 @@ This one uses de ddply command to collapse the data into the means by activity, 
 
 
 Step 17
-this section exports the data into a txt file with                                                                                                     
+this section exports the data into a txt file with    
+
+Step 18
+clean other datafiles
 
 write.table(completedatab,  "completedatab.txt", row.names = FALSE)
 
