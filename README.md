@@ -7,9 +7,11 @@ The R file processes the data for 30 individuals and 6 activities and keeps only
 
 #DATAFILES BUILT WITH run_analysis.R
 completedataMelted
-the R file builds a dataframe called completedatab which containd 4 columns, one for the activity, one for the id of the subject, on for the type of measurement taken and one for the value of the measurement.The file has 679734 values in total (rows) for 33 types of measurements for 6 activities and for 30 individuals.
+The R file builds a dataframe called completedatab which containd 4 columns, one for the activity, one for the id of the subject, on for the type of measurement taken and one for the value of the measurement.The file has 679734 values in total (rows) for 33 types of measurements for 6 activities and for 30 individuals.
+
 completedatab
-this file saves only the means of the measurements for each variable for each activity and for each individual. the resulting datafram contains 11880 observations of the mean of the mean and standard deviation of each measurement. that is one observation for each person-activity-measurment combination.
+
+This file saves only the means of the measurements for each variable for each activity and for each individual. the resulting datafram contains 11880 observations of the mean of the mean and standard deviation of each measurement. that is one observation for each person-activity-measurment combination.
 
 #the steps followed by the code are the following:
 
